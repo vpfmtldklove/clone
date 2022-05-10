@@ -581,7 +581,7 @@
     }
     .premium_list1 img:hover, .premium_list2 img:hover, .premium_list3 img:hover, .premium_list4 img:hover {
         transform: scale(1.4);
-        border-radius: 5px;
+        border-radius: 4px;
     }
     .pl_1 {
         /* background-color: yellow; */
