@@ -561,7 +561,7 @@
     }
 
     .premium_list {
-        /* background-color: #4f80ff; */
+        background-color: #4f80ff;
         width: 100%;
         height: 300px;
         display: flex;
@@ -595,7 +595,7 @@
     /* 베스트 */
     .best_list {
         /* background-color: gray; */
-        /* display: flex; */
+        display: flex;
         justify-content: space-around;
         overflow-y: hidden;
         white-space: nowrap;
@@ -607,17 +607,19 @@
     
     .best_list2 {
         /* background-color: red; */
+        width: 100%;
         height: 300px;
         display: flex;
     }
     .best_br1, .best_br2, .best_br3, .best_br4 {
-        /* background-color: #4f80ff; */
+        background-color: #4f80ff;
         width: 35%;
         height:200px;
         margin: 10px;
         border-radius: 5px;
         overflow: hidden;
     }
+    
     .best_br1 img, .best_br2 img, .best_br3 img, .best_br4 img {
         width: 100%;
         height: 100%;
@@ -627,15 +629,11 @@
         transform: scale(1.2);
         border-radius: 5px;
     }
-    .best_br4 {
+    /* .best_br4 {
         background-color:  #f5f5f5;
         text-align: center;
 
-    }
-    best_br4 div {
-        position: relative;
-        bottom: 50px;
-    }
+    } */
     .bb_1 {
         /* background-color: yellow; */
         height: 0;
@@ -643,6 +641,7 @@
         flex-direction: row;
     }
     .bb1_1{
+        background-color: yellow;
         position: relative;
         bottom: 80px;
         left: 20px;
@@ -658,7 +657,6 @@
         left: 490px;
     }
 
- /* 베스트 다시 수정하기 */
 
     /* 메인 하단 */
     .container_notice {
