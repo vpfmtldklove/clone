@@ -561,7 +561,7 @@
     }
 
     .premium_list {
-        background-color: #4f80ff;
+        /* background-color: #4f80ff; */
         width: 100%;
         height: 300px;
         display: flex;
