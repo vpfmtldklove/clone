@@ -20,9 +20,6 @@
             <div class="top-banner_pc">
                 <a href="https://ohou.se/exhibitions/2031" target="blank">첫 구매라면 누구나 2만원 할인받기</a>
                 <i class="fa-solid fa-xmark"></i>
-                <!-- <button class="top-banner_bt" type="button">
-                    <img class="bn_img" src="./x.png">
-                </button> -->
             </div>
         </div>
 
@@ -49,8 +46,19 @@
                     </li>
                     <li class="list_ms">로그인</li>
                     <li class="list_ms">회원가입</li>
-                    <li class="list_ms">
-                        <button class="list3_bt">글쓰기</button>
+                    <li class="list_ms1">
+                        <button class="list3_bt">
+                            <span class="list3_icon">글쓰기</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <div class="list3_content">
+                            <a href="#">사진올리기</a>
+                            <a href="#">집들이 글쓰기</a>
+                            <a href="#">노하우 글쓰기</a>
+                            <a href="#">상품리뷰쓰기</a>
+                            <a href="#">시공 전문가</a>
+                            <a href="#">인테리어 질문</a>
+                        </div>
                     </li>
                 </ul>
                 
@@ -82,29 +90,49 @@
                             <img src="./alexandra-gorn-JIUjvqe2ZHg-unsplash.jpg" alt="">
                     </div>
 
-                    <div class="row2">
-                        <ul class="slides">
-                            <li>
-                                <img src="./home2.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="./home1.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="./store-1.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="./store-3.jpg" alt="">
-                            </li>
-                        </ul>
-
-                        <!-- <p class="controller">
+                    <div id="row_two"> 
+                        <ul class="slides_list"> 
+                            <li><img src="./home2.jpg" alt=""></li> 
+                            <li><img src="./home1.jpg" alt=""></li>
+                            <li><img src="./store-1.jpg" alt=""></li> 
+                            <li><img src="./store-3.jpg" alt=""></li> 
+                        </ul> 
+                        <p class="controller"> 
+                            <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 --> 
                             <span class="prev">&lang;</span> 
-                            <span class="next">&rang;</span>
-                        </p> -->
+                            <span class="next">&rang;</span> 
+                        </p> 
                     </div>
-                    
+
+
+                    <!-- <div class="row_two">
+                        <div class="slides_list">
+                            <div class="slides">
+                                <img src="./home2.jpg" alt="">
+                            </div>
+                            <div class="slides">
+                                <img src="./home1.jpg" alt="">
+                            </div>
+                            <div class="sildes">
+                                <img src="./store-1.jpg" alt="">
+                            </div>
+                            <div class="sildes">
+                                <img src="./store-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button_list">
+                        <button class="button_left"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="button_right"><i class="fa-solid fa-angle-right"></i></button>
+                    </div> -->
                 </div>
+            </div>
+
+            <div class="row1_list">
+                <div class="ro1_li1"><strong>화이트로 꾸민 아파트</strong></div>
+                <div class="ro1_li2">도토리행님</div>
+                <div class="ro1-li3"></div>
             </div>
 
             <nav class="container_menu">
@@ -330,37 +358,6 @@
                         <img src="./4!.jpg" alt=""> 
                         <div class="dill_br1_1">분리수거함</div>
                     </div>
-
-                <!-- <div class="dill_list">
-                    <div class="dill_list1"> 
-                            <img src="./1!.jpg" alt="">
-                            <div class="di_1">
-                                <div>에어서큘레이터</div>
-                            </div>
-                    </div>
-                    
-
-                    <div class="dill_list2"> 
-                        <img src="./2!.jpg" alt="">
-                        <div class="di_1">
-                            <div>구름슬리퍼</div>
-                        </div>
-                    </div>
-
-                    <div class="dill_list3"> 
-                        <img src="./3!.jpg" alt="">
-                        <div class="di_1">
-                            <div>흡착식 도어 슬리퍼</div>
-                        </div>
-                    </div>
-
-                    <div class="dill_list4"> 
-                            <img src="./4!.jpg" alt="">
-                        <div class="di_1">
-                            <div>분리수거함</div>
-                        </div>
-                    </div>
-                </div> -->
             </section>
 
 
@@ -520,7 +517,10 @@
                         <img src="./0123.jpg" alt="">
                     </div>
                     <div class="best_br4">
-    
+                        <div class="br4_icon">베스트 셀러 더보기</div>
+                        <div class="br4_icon">
+                            <a href="https://ohou.se/commerces/ranks?type=best"><i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="bb_1">
@@ -577,6 +577,4 @@
 </body>
 </html>
 
-<script>
-
-</script>
+<script src="JS/slideShow.js"></script>
