@@ -46,21 +46,22 @@
                     </li>
                     <li class="list_ms">로그인</li>
                     <li class="list_ms">회원가입</li>
-                    <li class="list_ms1">
-                        <button class="list3_bt">
-                            <span class="list3_icon">글쓰기</span>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </button>
-                        <div class="list3_content">
-                            <a href="#">사진올리기</a>
-                            <a href="#">집들이 글쓰기</a>
-                            <a href="#">노하우 글쓰기</a>
-                            <a href="#">상품리뷰쓰기</a>
-                            <a href="#">시공 전문가</a>
-                            <a href="#">인테리어 질문</a>
-                        </div>
+                    <!-- <li class="list_ms1"> -->
                     </li>
                 </ul>
+                <div class="dropdown">
+                    <button class="list3_bt" onclick="dp_menu()">글쓰기
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div id="list3_content">
+                        <a href="#">사진올리기</a>
+                        <a href="#">집들이 글쓰기</a>
+                        <a href="#">노하우 글쓰기</a>
+                        <a href="#">상품리뷰쓰기</a>
+                        <a href="#">시공 전문가</a>
+                        <a href="#">인테리어 질문</a>
+                    </div>
+                </div>
                 
             </div>    
             <div class="nav_bar1">
@@ -87,15 +88,15 @@
                 <div class="row">
 
                     <div class="row1">
-                            <img src="./alexandra-gorn-JIUjvqe2ZHg-unsplash.jpg" alt="">
+                            <img src="./image_readtop_2020_948032_16000682494355139.jpg" alt="">
                     </div>
 
                     <div id="row_two"> 
                         <ul class="slides_list"> 
-                            <li><img src="./home2.jpg" alt="" width="250px" height="480px"></li> 
-                            <li><img src="./home1.jpg" alt="" width="250px" height="480px"></li>
-                            <li><img src="./store-1.jpg" alt="" width="250px" height="480px"></li> 
-                            <li><img src="./store-3.jpg" alt="" width="250px" height="480px"></li> 
+                            <li><img src="./165262462273963092.webp" alt="" width="250px" height="480px"></li> 
+                            <li><img src="./165164434042577887.webp" alt="" width="250px" height="480px"></li>
+                            <li><img src="./165131438551499245.webp" alt="" width="250px" height="480px"></li> 
+                            <li><img src="./165131409728119781.webp" alt="" width="250px" height="480px"></li> 
                         </ul> 
                         <p class="controller"> 
                             <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 --> 
@@ -213,7 +214,7 @@
                 <h3>오늘의 스토리</h3>
                 <section class="container_store">
                     <div class="store_br">
-                        <div class="br1"><img src="./1.jpg" alt=""> 
+                        <div class="br1"><img src="./q1.jpg" alt=""> 
                             <div class="br1_list">
                                 <div class="br1_br1"><strong>초록초록한 식물로 꾸민 구옥원룸</strong></div>
                                 <div class="br1_br2">gamddo</div>
@@ -556,9 +557,7 @@
 </html>
 
 
-<script>
-    alert('aaa');
-    console.log('aaa');    
+<script>   
     const slides_list = document.querySelector('.slides_list');
     const slides_listImg = document.querySelector('.slides_list li');
     let currentldx = 0;
@@ -567,13 +566,13 @@
     const prev = document.querySelector('.prev');
     console.log(prev);
     const next = document.querySelector('.next');
-    const slideWidth = 200;
-    const slideMargin = 10;
+    const slideWidth = 250;
+    const slideMargin = 0;
 
     slides_list.style.width = (slideWidth + slideMargin) * slideCount + 'px';
 
     function moveSlide(num) {
-        slides_list.style.left =-num * 260 + 'px';
+        slides_list.style.left =-num * 250 + 'px';
         currentldx = num;
     }
 
@@ -588,6 +587,17 @@
             moveSlide(currentldx + 1);
         }
     });
+
+    function dp_menu() {
+        let click = document.getElementById("list3_content");
+        if(click.style.display === "none") {
+            click.style.display = "blcok";
+            console.log('작동');
+        } else {
+            click.style.display = "none";
+            console.log('아니요');
+        }
+    };
 
 
 
