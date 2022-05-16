@@ -83,19 +83,19 @@
 
         <!-- 메인페이지 -->
         <div class="main-container">
-
             <div class="container_header">
                 <div class="row">
+
                     <div class="row1">
                             <img src="./alexandra-gorn-JIUjvqe2ZHg-unsplash.jpg" alt="">
                     </div>
 
                     <div id="row_two"> 
                         <ul class="slides_list"> 
-                            <li><img src="./home2.jpg" alt=""></li> 
-                            <li><img src="./home1.jpg" alt=""></li>
-                            <li><img src="./store-1.jpg" alt=""></li> 
-                            <li><img src="./store-3.jpg" alt=""></li> 
+                            <li><img src="./home2.jpg" alt="" width="250px"></li> 
+                            <li><img src="./home1.jpg" alt="" width="250px"></li>
+                            <li><img src="./store-1.jpg" alt="" width="250px"></li> 
+                            <li><img src="./store-3.jpg" alt="" width="250px"></li> 
                         </ul> 
                         <p class="controller"> 
                             <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 --> 
@@ -104,28 +104,6 @@
                         </p> 
                     </div>
 
-
-                    <!-- <div class="row_two">
-                        <div class="slides_list">
-                            <div class="slides">
-                                <img src="./home2.jpg" alt="">
-                            </div>
-                            <div class="slides">
-                                <img src="./home1.jpg" alt="">
-                            </div>
-                            <div class="sildes">
-                                <img src="./store-1.jpg" alt="">
-                            </div>
-                            <div class="sildes">
-                                <img src="./store-3.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="button_list">
-                        <button class="button_left"><i class="fa-solid fa-angle-left"></i></button>
-                        <button class="button_right"><i class="fa-solid fa-angle-right"></i></button>
-                    </div> -->
                 </div>
             </div>
 
@@ -258,7 +236,7 @@
                                 <div class="br3_br1"><strong>색다른 구조의 리모델링</strong></div>
                                 <div class="br3_br2">윤록이네</div>
                                 <div class="br3-br3" style="background-color: indianred;">
-                                    <img src="./666666666.png.crdownload" alt="">
+                                    <!-- <img src="./666666666.png.crdownload" alt=""> -->
                                 </div>
                             </div>
                         </div>
@@ -577,4 +555,42 @@
 </body>
 </html>
 
-<script src="JS/slideShow.js"></script>
+
+<script>
+    alert('aaa');
+    console.log('aaa');    
+    const slides_list = document.querySelector('.slides_list');
+    const slides_listImg = document.querySelector('.slides_list li');
+    let currentldx = 0;
+    const slideCount = slides_listImg.length;
+    console.log(slideCount);
+    const prev = document.querySelector('.prev');
+    console.log(prev);
+    const next = document.querySelector('.next');
+    const slideWidth = 200;
+    const slideMargin = 10;
+
+    slides_list.style.width = (slideWidth + slideMargin) * slideCount + 'px';
+
+    function moveSlide(num) {
+        slides_list.style.left =-num * 260 + 'px';
+        currentldx = num;
+    }
+
+    prev.addEventListener('click', function() {
+        console.log('이전');
+        if (currentldx !== 0) moveSlide(currentldx - 1);
+    });
+    
+    next.addEventListener('click', function() {
+        console.log('다음');
+        if (currentldx !== slideCount -1) {
+            moveSlide(currentldx + 1);
+        }
+    });
+
+
+
+
+
+</script>
