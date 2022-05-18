@@ -43,7 +43,7 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <i class="fa-solid fa-cart-shopping"></i>
                     </li>
-                    <li class="list_ms">로그인</li>
+                    <li class="list_ms"><a href="../view/sign_in.html">로그인</a></li>
                     <li class="list_ms">회원가입</li>
                     <!-- <li class="list_ms1"> -->
                     </li>
@@ -557,12 +557,12 @@
 
 <script>   
     const slides_list = document.querySelector('.slides_list');
-    const slides_listImg = document.querySelector('.slides_list li');
+    const slides_listImg = document.querySelectorAll('.slides_list li');
     let currentldx = 0;
     const slideCount = slides_listImg.length;
     console.log(slideCount);
     const prev = document.querySelector('.prev');
-    console.log(prev);
+    // console.log(prev);
     const next = document.querySelector('.next');
     const slideWidth = 250;
     const slideMargin = 0;
@@ -581,7 +581,7 @@
     
     next.addEventListener('click', function() {
         console.log('다음');
-        if (currentldx !== slideCount -4) {
+        if (currentldx !== slideCount -1) {
             moveSlide(currentldx + 1);
         }
     });
