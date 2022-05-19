@@ -1,3 +1,7 @@
+<?php 
+    include("../back/connect.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,8 +48,8 @@
                         <i class="fa-solid fa-cart-shopping"></i>
                     </li>
                     <li class="list_ms"><a href="../view/sign_in.html">로그인</a></li>
-                    <li class="list_ms">회원가입</li>
-                    <!-- <li class="list_ms1"> -->
+                    <li class="list_ms"><a href="../view/sign_up.html">회원가입</a></li>
+                    
                     </li>
                 </ul>
                 <div class="dropdown">
