@@ -20,7 +20,7 @@ if($db_pw) {
         echo "
         <script>
             alert('로그인성공!');
-            location.href = '../view/index.php';
+            location.href = 'logout.php';
         </script>
         ";
     } else {
