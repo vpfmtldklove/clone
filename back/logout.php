@@ -1,5 +1,5 @@
 <?php 
-    include("../back/connect.php");
+    include("./connect.php");
 ?>
 
 <!DOCTYPE html>
@@ -554,7 +554,6 @@
                 </div>
             </div>
         </footer>
-
     </div>
 </body>
 </html>
@@ -603,6 +602,8 @@
     };
 
     function logout() {
+
+        alert("로그아웃 되었습니다.");
         location.href = "sign_in.php";
     }
     // function myInfoUpdate() {

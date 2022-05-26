@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody&family=Gamja+Flower&family=Nanum+Pen+Script&family=Secular+One&family=Song+Myung&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="stylesheet" href="../assets/style/style.css?ver=1">
     <title>오늘의집</title>
 </head>
 <body>
@@ -49,7 +49,6 @@
                     </li>
                     <li class="list_ms"><a href="../view/sign_in.html">로그인</a></li>
                     <li class="list_ms"><a href="../view/sign_up.html">회원가입</a></li>
-                    
                     </li>
                 </ul>
                 <div class="dropdown">
@@ -57,12 +56,12 @@
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <div id="list3_content">
-                        <a href="#">사진올리기</a>
+                        <!-- <a href="#">사진올리기</a>
                         <a href="#">집들이 글쓰기</a>
                         <a href="#">노하우 글쓰기</a>
                         <a href="#">상품리뷰쓰기</a>
-                        <a href="#">시공 전문가</a>
-                        <a href="#">인테리어 질문</a>
+                        <a href="#">시공 전문가</a> -->
+                        <a href="">게시판</a>
                     </div>
                 </div>
                 
@@ -593,11 +592,11 @@
     function dp_menu() {
         let click = document.getElementById("list3_content");
         if(click.style.display === "none") {
-            click.style.display = "blcok";
+            click.style.display = "block";
             console.log('작동');
         } else {
             click.style.display = "none";
-            console.log('아니요');
+            console.log('꺼짐');
         }
     };
 
